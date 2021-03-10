@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+body {
+  width: 100vw;
+}
+.header {
+  width: 100%;
+  height: 7rem;
+  background: rgb(0, 8, 118);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 8, 118, 1) 0%,
+    rgba(0, 8, 118, 0.802025033646271) 66%,
+    rgba(255, 255, 255, 0.802025033646271) 92%
+  );
+  padding: 2rem;
+  padding-left: 4rem;
+}
+.mainHead {
+  color: #fff;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 4rem;
+}
+.secondHead {
+  color: rgb(168, 166, 166);
+  font-size: 2rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-left: 5rem;
+}
+.navbar {
+  width: 100%;
+  height: 2rem;
+  background-color: rgb(1, 1, 54);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.navLink {
+  border-right: 2px solid #fff;
+  text-align: center;
+  padding: 20px;
+  margin: 0 1rem !important;
+  width: 100%;
+}
+.link {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #fff;
+}
+.link:hover {
+  color: rgb(192, 191, 191);
+}
+.mainBody {
+  width: 100%;
+  display: flex;
+}
+.leftBody {
+  flex: 0.65;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  padding: 1.5rem;
+}
+
+.contentHeading {
+  color: rgb(2, 2, 105);
+  font-family: "Times New Roman", Times, serif;
+  text-transform: uppercase;
+}
+.contentBox {
+  width: 100%;
+  height: 100%;
+  margin-top: 1rem;
+  overflow: hidden;
+}
+.homeImage {
+  margin-right: 1rem;
+  height: 15rem;
+  width: 25rem;
+  float: left;
+  shape-outside: square();
+}
+.contentPara {
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+.rightBody {
+  flex: 0.35;
+  height: 100%;
+  width: 100%;
+  padding: 1.5rem;
+}
+.rightHeading {
+  font-size: 2rem;
+  color: gray;
+}
+.mainList {
+  margin: 2rem 1rem;
+}
+.mainList li {
+  margin: 1rem;
+}
+.mainList li a {
+  text-decoration: none;
+  color: rgb(2, 2, 71);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.mainList li a:hover {
+  color: rgb(2, 2, 71, 0.5);
+}
+.homeTable {
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(0, 0, 99);
+}
+.homeTable table {
+  width: 50%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+.homeTable table th {
+  text-align: start;
+  border: 2px solid black;
+  padding: 1rem;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: rgba(0, 0, 255, 0.438);
+}
+.homeTable table td {
+  padding: 0.7rem;
+  text-align: start;
+  border: 2px solid black;
+}
+.homeTable table tr:nth-child(odd) {
+  background-color: rgba(0, 0, 255, 0.315);
+}
+.homeTable table tr:nth-child(even) {
+  background-color: rgba(0, 0, 255, 0.178);
+}
+.footer {
+  width: 100%;
+  height: 1rem;
+  background: rgb(0, 8, 118);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 8, 118, 1) 0%,
+    rgba(0, 8, 118, 0.802025033646271) 66%,
+    rgba(255, 255, 255, 0.802025033646271) 92%
+  );
+  padding: 1rem;
+  text-align: start;
+  color: #fff;
+  font-size: 1.3rem;
+}
+@media only screen and (max-width: 1000px) {
+  .homeImage {
+    float: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .header {
+    padding: 0;
+  }
+  .secondHead {
+    margin-left: 1rem;
+  }
+  .navbar {
+    flex-direction: column;
+    height: auto;
+  }
+  .navLink {
+    border: none;
+  }
+  .mainBody {
+    flex-direction: column;
+    padding: 0;
+  }
+  .leftBody {
+    padding: 0;
+  }
+  .homeImage {
+    margin: 0;
+    float: none;
+    margin: 1rem 0;
+  }
+  .contentPara {
+    margin: 0 0.5rem;
+  }
+  .homeTable table {
+    transform: scale(0.8);
+  }
+}
